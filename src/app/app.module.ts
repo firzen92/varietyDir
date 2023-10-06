@@ -2,13 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { SharedModule } from '@shared/shared.module';
+import { ViewEditorComponent } from './layout/view-editor/view-editor.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, ViewEditorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
